@@ -1,0 +1,19 @@
+{
+    "mealtypes": [
+        {
+            "mealtype": "breakfast"
+        },
+        {
+            "mealtype": "lunch"
+        },
+        {
+            "mealtype": "dinner"
+        },
+        {
+            "mealtype": "snack"
+        },
+        {
+            "mealtype": "teatime"
+        }
+    ]
+}

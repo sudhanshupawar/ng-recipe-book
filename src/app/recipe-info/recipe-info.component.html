@@ -1,0 +1,128 @@
+<div *ngIf="recipe">
+  <div class="grid grid-cols-5 items-center mt-5 md:mt-10">
+    <div class="col-span-5 md:col-span-3 lg:mx-10">
+      <p
+        class="px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        {{ mealtype }}
+      </p>
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-pd uppercase"
+      >
+        {{ recipe.label }}
+      </h1>
+
+      <h2
+        class="mt-5 px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        Health Labels
+      </h2>
+      <br />
+      <p
+        class="mt-1 md:mt-4 ml-1 px-4 py-1 text-sm inline-block rounded-full lowercase cursor-pointer border-b-2 transition duration-500 ease-linear hover:border-orange-300"
+        *ngFor="let hl of recipe.healthLabels"
+      >
+        {{ hl }}
+      </p>
+
+      <div>
+        <h2
+          class="mt-5 px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+        >
+          Calories : {{ recipe.calories | number: "1.1-2" }}
+        </h2>
+
+        <h2
+          class="mt-1 lg:mt-0 sm:ml-2 lg:ml-2 mt-5 px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+        >
+          Total time : {{ recipe.totalTime }} min
+        </h2>
+      </div>
+    </div>
+
+    <div class="col-span-5 md:col-span-2 rounded">
+      <img
+        [src]="recipe.image"
+        [alt]="recipe.label"
+        class="rounded p-4 w-full h-full"
+      />
+    </div>
+  </div>
+  <!-- info secition -->
+  <div class="mt-2 mb-10 lg:mx-10 grid grid-cols-6 gap-4">
+    <div class="col-span-6 lg:col-span-3">
+      <h2
+        class="px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        Ingredients
+      </h2>
+      <div
+        class="mt-1 px-3 py-2 rounded text-sm bg-gray-200 lowercase flex justify-between"
+        *ngFor="let ing of recipe.ingredients"
+      >
+        <p>{{ ing.text }}</p>
+        <p class="px-2 rounded bg-pd text-orange-100 whitespace-no-wrap">
+          {{ ing.weight | number: "1.1-2" }} grams
+        </p>
+      </div>
+    </div>
+    <div class="col-span-6 lg:col-span-3">
+      <h2
+        class="px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        Diet Labels
+      </h2>
+      <p
+        class="mt-1 px-3 py-2 rounded text-sm bg-gray-200 lowercase flex justify-between"
+        *ngFor="let dl of recipe.dietLabels"
+      >
+        {{ dl }}
+      </p>
+    </div>
+    <div class="col-span-6 lg:col-span-3">
+      <h2
+        class="px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        Caution
+      </h2>
+      <p
+        class="mt-1 px-3 py-2 rounded text-sm bg-gray-200 lowercase flex justify-between"
+        *ngFor="let caution of recipe.cautions"
+      >
+        {{ caution }}
+      </p>
+    </div>
+    <div class="col-span-6 lg:col-span-3"></div>
+    <div class="col-span-6 lg:col-span-3">
+      <h2
+        class="px-3 rounded-sm text-sm sm:text-base md:text-lg font-mono tracking-wider text-orange-500 bg-orange-300 uppercase inline-block"
+      >
+        Total Daily
+      </h2>
+
+      <div class="flex flex-row justify-between overflow-x-auto">
+        <div
+          class="my-2 mx-1 px-2 py-4 font-semibold text-center bg-gray-200 rounded text-sm capitalize whitespace-no-wrap"
+          *ngFor="let td of totalDaily"
+        >
+          <p>{{ td.label }}</p>
+          <p class="mt-2 px-2 rounded bg-pd text-orange-100">
+            {{ td.quantity | number: "1.1-2" }} {{ td.unit }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  *ngIf="!recipe"
+  class="mt-20 flex flex-col-reverse items-center container mx-auto text-center"
+>
+  <img class="w-64" src="../../assets/imges/not-found.png" alt="" />
+  <h2
+    class="whitespace-no-wrap text-5xl capitalize p-5 font-bold text-gray-700"
+  >
+    Not Data found <br />
+    for given request
+  </h2>
+</div>

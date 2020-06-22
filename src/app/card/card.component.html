@@ -1,0 +1,32 @@
+<div class="recipe-card">
+  <div
+    class="px-5 py-1 font-medium tracking-wide text-p bg-pd rounded z-50 added-to-bookmark"
+    [class.invisible]="bokmarkAddedLabel"
+  >
+    Added to bookmark
+  </div>
+  <i
+    (click)="bookmarkRecipe(recipe); $event.stopPropagation()"
+    class="fa fa-bookmark text-2xl bookmark-label text-orange-500"
+  >
+  </i>
+  <img
+    [src]="recipe.recipe.image"
+    [alt]="recipe.recipe.label"
+    class="rounded h-full w-full recipe-image"
+  />
+
+  <div class="recipe-info rounded">
+    <div class="flex flex-row whitespace-no-wrap items-end overflow-x-auto">
+      <small
+        *ngFor="let label of recipe.recipe.healthLabels"
+        [class]="getRandomBackground()"
+        class="mx-1 px-1 w-full rounded-sm text-white font-normal text-xs tracking-wider"
+        >{{ label }}
+      </small>
+    </div>
+    <h2 class="h-full capitalize text-lg font-medium text-gray-100">
+      {{ recipe.recipe.label }}
+    </h2>
+  </div>
+</div>

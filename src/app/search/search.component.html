@@ -1,0 +1,84 @@
+<div
+  class="mt-4 mb-4 px-2 md:px-5 flex items-center rounded-sm bg-gray-100 shadow placeholder-gray-500 text-gray-800"
+>
+  <i class="px-2 md:px-5 py-1 fa fa-search text-gray-500"></i>
+  <input
+    #searchRecipe="ngModel"
+    ngModel
+    required
+    name="searchRecipe"
+    class="px-2 md:px-5 py-1 text-gray-600 font-medium capitalize tracking-wide w-full text-base md:text-xl lg:text-2xl bg-gray-100 focus:outline-none"
+    type="text"
+    placeholder="Search recipe"
+  />
+  <button
+    [disabled]="!searchRecipe.touched && !searchRecipe.valid"
+    [class.isdisabled]="!searchRecipe.valid"
+    class="px-4 md:py-1 text-sm md:text-base text-white bg-blue-500 rounded"
+    (click)="searchByUserInput(searchRecipe.value)"
+  >
+    Search
+  </button>
+</div>
+<div *ngIf="searchRecipe.touched && !searchRecipe.valid">
+  <small class="text-xs text-red-500 capitalize float-right block"
+    >please enter valid search</small
+  >
+</div>
+
+<small class="text-gray-500 tracking-wider text-sm md:text-base"
+  >Search across lot's of variety</small
+>
+<hr class="my-1 md:my-4" />
+
+<div>
+  <h2 class="text-gray-700 text-2xl font-bold mt-2">Cuisine Type</h2>
+  <p
+    *ngFor="let cuisinetype of cuisinetypes"
+    [ngClass]="getRandomBackground()"
+    class="mx-2 mt-2 px-4 py-1 inline-block font-medium rounded text-gray-100 cursor-pointer"
+    (click)="withFrontData(cuisinetype.cuisinetype)"
+  >
+    {{ cuisinetype.cuisinetype }}
+  </p>
+</div>
+
+<div>
+  <h2 class="text-gray-700 text-2xl font-bold mt-2">Diet Type</h2>
+  <p
+    *ngFor="let dietlabel of dietlabels"
+    [ngClass]="getRandomBackground()"
+    [title]="dietlabel.defination"
+    class="mx-2 mt-2 px-4 py-1 inline-block font-medium rounded text-gray-100 cursor-pointer"
+    (click)="withBackData(dietlabel.weblabel)"
+  >
+    {{ dietlabel.weblabel }}
+  </p>
+</div>
+
+<div>
+  <h2 class="text-gray-700 text-2xl font-bold mt-2">Dish Type</h2>
+  <p
+    *ngFor="let distype of distypes"
+    [ngClass]="getRandomBackground()"
+    class="mx-2 mt-2 px-4 py-1 inline-block font-medium rounded text-gray-100 cursor-pointer"
+    (click)="withFrontData(distype.dishtype)"
+  >
+    {{ distype.dishtype }}
+  </p>
+</div>
+
+<div>
+  <h2 class="text-gray-700 text-2xl font-bold mt-2">Health Label</h2>
+  <p
+    *ngFor="let healthlabel of healthlabels"
+    [ngClass]="getRandomBackground()"
+    [title]="healthlabel.defination"
+    class="mx-2 mt-2 px-4 py-1 inline-block font-medium rounded text-gray-100 cursor-pointer"
+    (click)="withBackData(healthlabel.weblabel)"
+  >
+    {{ healthlabel.weblabel }}
+  </p>
+</div>
+
+<p class="mb-20"></p>

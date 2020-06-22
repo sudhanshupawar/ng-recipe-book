@@ -1,0 +1,54 @@
+.recipe-card {
+  position: relative;
+
+  .added-to-bookmark {
+    z-index: 99;
+    position: absolute;
+    transition: visibility 1s;
+  }
+
+  .bookmark-label {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    z-index: 20;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .recipe-image {
+    opacity: 0.9;
+  }
+
+  &:hover .recipe-image {
+    opacity: 1;
+  }
+
+  .recipe-info {
+    letter-spacing: 1px;
+    width: 100%;
+    height: max-content;
+    background: rgb(187, 187, 187);
+    background: linear-gradient(
+      180deg,
+      rgba(187, 187, 187, 0.06235997817095584) 0%,
+      rgba(179, 179, 179, 0.11558126668636204) 7%,
+      rgba(172, 172, 172, 0.208018241476278) 13%,
+      rgba(162, 162, 162, 0.28644961402529767) 21%,
+      rgba(155, 155, 155, 0.4489146000196954) 27%,
+      rgba(146, 146, 146, 0.5133403703278187) 35%,
+      rgba(116, 116, 116, 0.6617997540813201) 60%,
+      rgba(81, 81, 81, 0.8326681014202556) 81%,
+      rgba(81, 81, 81, 0.8326) 90%
+    );
+    position: absolute;
+    z-index: 10;
+    padding: 10px 10px;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

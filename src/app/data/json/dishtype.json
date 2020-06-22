@@ -1,0 +1,52 @@
+{
+    "dishtypes": [
+        {
+            "dishtype": "Biscuits-and-cookies "
+        },
+        {
+            "dishtype": "Bread "
+        },
+        {
+            "dishtype": "Cereals "
+        },
+        {
+            "dishtype": "Condiments-and-sauces "
+        },
+        {
+            "dishtype": "Drinks "
+        },
+        {
+            "dishtype": "Desserts "
+        },
+        {
+            "dishtype": "Main-course "
+        },
+        {
+            "dishtype": "Pancake "
+        },
+        {
+            "dishtype": "Preps "
+        },
+        {
+            "dishtype": "Preserve "
+        },
+        {
+            "dishtype": "Salad "
+        },
+        {
+            "dishtype": "Sandwiches "
+        },
+        {
+            "dishtype": "Side-dish"
+        },
+        {
+            "dishtype": "Soup "
+        },
+        {
+            "dishtype": "Starter "
+        },
+        {
+            "dishtype": "Sweets "
+        }
+    ]
+}

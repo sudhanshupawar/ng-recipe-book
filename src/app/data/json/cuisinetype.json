@@ -1,0 +1,55 @@
+{
+    "cuisinetypes": [
+        {
+            "cuisinetype": "Asian"
+        },
+        {
+            "cuisinetype": "British"
+        },
+        {
+            "cuisinetype": "Caribbean"
+        },
+        {
+            "cuisinetype": "Central-Europe"
+        },
+        {
+            "cuisinetype": "Chinese"
+        },
+        {
+            "cuisinetype": "Eastern-Europe "
+        },
+        {
+            "cuisinetype": "French"
+        },
+        {
+            "cuisinetype": "Indian"
+        },
+        {
+            "cuisinetype": "Italian"
+        },
+        {
+            "cuisinetype": "Japanese"
+        },
+        {
+            "cuisinetype": "Kosher"
+        },
+        {
+            "cuisinetype": "Mediterranean"
+        },
+        {
+            "cuisinetype": "Mexican"
+        },
+        {
+            "cuisinetype": "Middle-Eastern "
+        },
+        {
+            "cuisinetype": "Nordic"
+        },
+        {
+            "cuisinetype": "South-American "
+        },
+        {
+            "cuisinetype": "South-East-Asian"
+        }
+    ]
+}

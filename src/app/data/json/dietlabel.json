@@ -1,0 +1,34 @@
+{
+    "dietlabels": [
+        {
+            "weblabel": "Balanced",
+            "apiparameter": " balanced ",
+            "defination": " Protein/Fat/Carb values in 15/35/50 ratio "
+        },
+        {
+            "weblabel": "High-Fiber",
+            "apiparameter": "high-fiber",
+            "defination": "More than 5g fiber per serving "
+        },
+        {
+            "weblabel": "High-Protein",
+            "apiparameter": "high-protein",
+            "defination": " More than 50% of total calories from proteins "
+        },
+        {
+            "weblabel": "Low-Carb",
+            "apiparameter": "low-carb ",
+            "defination": "Less than 20% of total calories from carbs"
+        },
+        {
+            "weblabel": "Low-Fat",
+            "apiparameter": "low-fat ",
+            "defination": "Less than 15% of total calories from fat "
+        },
+        {
+            "weblabel": "Low-Sodium",
+            "apiparameter": "low-sodium ",
+            "defination": "Less than 140mg Na per serving"
+        }
+    ]
+}

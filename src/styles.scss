@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./recipes.css";
+@import "tailwindcss/utilities";
+
+$primary-color: #fddab9;
+$primary-dark-color: #f0ac71;
+.text-p {
+  color: $primary-color;
+}
+.bg-p {
+  background-color: $primary-color;
+}
+.text-pd {
+  color: $primary-dark-color;
+}
+.bg-pd {
+  background-color: $primary-dark-color;
+}

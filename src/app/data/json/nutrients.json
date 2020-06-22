@@ -1,0 +1,134 @@
+{
+    "nutrient": [
+        {
+            "ntrcode": "CA",
+            "name": "Calcium",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "ENERC_KCAL",
+            "name": "Energy",
+            "unit": "kcal"
+        },
+        {
+            "ntrcode": "CHOCDF",
+            "name": "Carbs",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "NIA",
+            "name": "Niacin (B3)",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "CHOLE",
+            "name": "Cholesterol",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "P",
+            "name": "Phosphorus",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "FAMS",
+            "name": "Monounsaturated",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "PROCNT",
+            "name": "Protein",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "FAPU",
+            "name": "Polyunsaturated",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "RIBF",
+            "name": "Riboflavin (B2)",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "FASAT",
+            "name": "Saturated",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "SUGAR",
+            "name": "Sugars",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "FAT",
+            "name": "Fat ",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "THIA",
+            "name": "Thiamin (B1)",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "FATRN",
+            "name": "Trans",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "TOCPHA",
+            "name": "Vitamin E",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "FE",
+            "name": "Iron",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "VITA_RAE",
+            "name": "Vitamin A",
+            "unit": "æg"
+        },
+        {
+            "ntrcode": "FIBTG",
+            "name": "Fiber",
+            "unit": "g"
+        },
+        {
+            "ntrcode": "VITB12",
+            "name": "Vitamin B12",
+            "unit": "æg"
+        },
+        {
+            "ntrcode": "K",
+            "name": "Potassium",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "VITC",
+            "name": "Vitamin C",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "MG",
+            "name": "Magnesium",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "VITD",
+            "name": "Vitamin D",
+            "unit": "æg"
+        },
+        {
+            "ntrcode": "NA",
+            "name": "Sodium",
+            "unit": "mg"
+        },
+        {
+            "ntrcode": "VITK1",
+            "name": "Vitamin K",
+            "unit": "æg"
+        }
+    ]
+}

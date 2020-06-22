@@ -1,0 +1,19 @@
+.main-cotent {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// .side-product {
+//   position: relative;
+//   .side-product-card {
+//     height: 420px;
+//     overflow-y: scroll;
+//     position: absolute;
+//     top: 40%;
+//     left: 5%;
+//     right: 5%;
+//   }
+// }

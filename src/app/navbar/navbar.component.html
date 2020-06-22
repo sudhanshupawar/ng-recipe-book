@@ -1,0 +1,23 @@
+<nav class="mt-2 flex flex-row justify-between items-center">
+  <span class="text-3xl md:text-5xl font-bold tracking-wider text-pd">
+    FOOD</span
+  >
+  <select
+    #mealtype_
+    (change)="requestCertainMealType(mealtype_.value)"
+    class="w-24 md:w-40 px-3 md:px-5 py-2 text-xs text-gray-700 font-medium capitalize rounded shadow focus:outline-none cuisines"
+    name="mealtype_"
+    id=""
+  >
+    <option
+      class="font-medium capitalize tracking-wider"
+      *ngFor="let mealtype of mealtypes"
+      [value]="mealtype.mealtype"
+      [selected]="currentmealtype === mealtype.mealtype"
+    >
+      {{ mealtype.mealtype }}
+    </option>
+  </select>
+</nav>
+
+<hr class="my-2" />
